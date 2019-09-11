@@ -1,0 +1,194 @@
+fileFormatVersion: 2
+guid: 094d35ed7ab293945bace71d7d62b579
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Brake_arms
+    100002: Brake_pipe
+    100004: Cabin_001
+    100006: Crank_001
+    100008: Diesel_mot
+    100010: Driving_w0
+    100012: Driving_wh
+    100014: Frame_001
+    100016: Loco_coup0
+    100018: Loco_coup1
+    100020: Loco_coup2
+    100022: Loco_coup3
+    100024: Loco_coup4
+    100026: Loco_coup5
+    100028: Loco_coup6
+    100030: Loco_coupl
+    100032: Plates_001
+    100034: Plates_003
+    100036: Side_rod_0
+    100038: Side_rod_1
+    100040: //RootNode
+    400000: Brake_arms
+    400002: Brake_pipe
+    400004: Cabin_001
+    400006: Crank_001
+    400008: Diesel_mot
+    400010: Driving_w0
+    400012: Driving_wh
+    400014: Frame_001
+    400016: Loco_coup0
+    400018: Loco_coup1
+    400020: Loco_coup2
+    400022: Loco_coup3
+    400024: Loco_coup4
+    400026: Loco_coup5
+    400028: Loco_coup6
+    400030: Loco_coupl
+    400032: Plates_001
+    400034: Plates_003
+    400036: Side_rod_0
+    400038: Side_rod_1
+    400040: //RootNode
+    2100000: Red__paint
+    2100002: Black
+    2100004: White_paint
+    2100006: Silver_paint
+    2100008: multi_Diesel_mot
+    2100010: Translucent_Glas
+    2100012: 'Material #47'
+    2300000: Brake_arms
+    2300002: Brake_pipe
+    2300004: Cabin_001
+    2300006: Crank_001
+    2300008: Diesel_mot
+    2300010: Driving_w0
+    2300012: Driving_wh
+    2300014: Frame_001
+    2300016: Loco_coup0
+    2300018: Loco_coup1
+    2300020: Loco_coup2
+    2300022: Loco_coup3
+    2300024: Loco_coup4
+    2300026: Loco_coup5
+    2300028: Loco_coup6
+    2300030: Loco_coupl
+    2300032: Plates_001
+    2300034: Plates_003
+    2300036: Side_rod_0
+    2300038: Side_rod_1
+    3300000: Brake_arms
+    3300002: Brake_pipe
+    3300004: Cabin_001
+    3300006: Crank_001
+    3300008: Diesel_mot
+    3300010: Driving_w0
+    3300012: Driving_wh
+    3300014: Frame_001
+    3300016: Loco_coup0
+    3300018: Loco_coup1
+    3300020: Loco_coup2
+    3300022: Loco_coup3
+    3300024: Loco_coup4
+    3300026: Loco_coup5
+    3300028: Loco_coup6
+    3300030: Loco_coupl
+    3300032: Plates_001
+    3300034: Plates_003
+    3300036: Side_rod_0
+    3300038: Side_rod_1
+    4300000: Frame_001
+    4300002: Brake_pipe
+    4300004: Cabin_001
+    4300006: Driving_wh
+    4300008: Side_rod_0
+    4300010: Brake_arms
+    4300012: Loco_coupl
+    4300014: Loco_coup0
+    4300016: Loco_coup1
+    4300018: Diesel_mot
+    4300020: Driving_w0
+    4300022: Crank_001
+    4300024: Loco_coup2
+    4300026: Plates_001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
