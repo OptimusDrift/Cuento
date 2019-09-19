@@ -11,6 +11,7 @@ public class Nav : MonoBehaviour
     public float velocidadGiro;
     public float tiempoDeAccion;
     public float tiempoPausa;
+    public GameObject navMeshScript;
     private int puntero;
     private NavMeshAgent objNav;
     private bool encoger;
@@ -22,6 +23,7 @@ public class Nav : MonoBehaviour
     private float z;
     private float tiempoDeAccionContador;
     private bool pausa;
+    private bool iniciar;
 
     // Start is called before the first frame update
     void Start()
@@ -29,69 +31,73 @@ public class Nav : MonoBehaviour
         objNav = GetComponent<NavMeshAgent>();
         puntero = 0;
         objNav.SetDestination(destinos[puntero].position);
-        objNav.Warp(destinos[puntero].position);
         encoger = false;
         enormizar = false;
         bajando = false;
         subiendo = false;
         pausa = false;
+        iniciar = true;
         x = 1;
         y = 1;
         z = 1;
         tiempoDeAccionContador = 0;
     }
-
     // Update is called once per frame
     void Update()
     {
-        NavMeshBuilder.UpdateNavMeshData();
-        if (encoger)
+        if (!iniciar)
         {
-            if (objTrans.localScale.x >= 0f)
+            navMeshScript.GetComponent<NavMeshSurface>().BuildNavMesh();
+            if (encoger)
             {
-                CambiarTamanno(-velocidad * Time.deltaTime);
+                if (objTrans.localScale.x >= 0f)
+                {
+                    CambiarTamanno(-velocidad * Time.deltaTime);
+                }
+                else
+                {
+                    encoger = false;
+                }
             }
-            else
-            {
-                encoger = false;
-            }
-        }
 
-        if (enormizar)
-        {
-            if (objTrans.localScale.x <= 1f)
+            if (enormizar)
             {
-                CambiarTamanno(velocidad * Time.deltaTime);
+                if (objTrans.localScale.x <= 1f)
+                {
+                    CambiarTamanno(velocidad * Time.deltaTime);
+                }
+                else
+                {
+                    enormizar = false;
+                }
             }
-            else
-            {
-                enormizar = false;
-            }
-        }
 
-        if (bajando)
-        {
-            RotarAbajo(velocidad * Time.deltaTime);
-        }
-
-        if (subiendo)
-        {
-            RotarArriba(velocidad * Time.deltaTime);
-        }
-        tiempoDeAccionContador -= Time.deltaTime;
-        Debug.Log(tiempoDeAccionContador);
-        if (tiempoDeAccionContador <= 0)
-        {
-            bajando = false;
-            subiendo = false;
-            if (pausa)
+            if (bajando)
             {
-                Debug.Log("asd");
-                PunteroSiguiente();
-                objNav.SetDestination(destinos[puntero].position);
-                objNav.Warp(destinos[puntero].position);
-                pausa = false;
+                RotarAbajo(velocidad * Time.deltaTime);
             }
+
+            if (subiendo)
+            {
+                RotarArriba(velocidad * Time.deltaTime);
+            }
+            tiempoDeAccionContador -= Time.deltaTime;
+            if (tiempoDeAccionContador <= 0)
+            {
+                bajando = false;
+                subiendo = false;
+                if (pausa)
+                {
+                    Debug.Log("asd");
+                    PunteroSiguiente();
+                    objNav.SetDestination(destinos[puntero].position);
+                    pausa = false;
+                }
+            }
+        }
+        else
+        {
+            objNav.Warp(destinos[0].position);
         }
     }
 
@@ -125,10 +131,10 @@ public class Nav : MonoBehaviour
         {
             PunteroSiguiente();
             objNav.SetDestination(destinos[puntero].position);
-            objNav.Warp(destinos[puntero].position);
         }
         if (other.tag.Equals("Pausa"))
         {
+            iniciar = false;
             pausa = true;
             tiempoDeAccionContador = tiempoPausa;
         }

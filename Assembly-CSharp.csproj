@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5FEE97BF-E292-4C26-877B-DF8A848364E9}</ProjectGuid>
+    <ProjectGuid>{5323BFEE-3CA5-F3FA-F374-6748ECFDA530}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -70,40 +70,41 @@
     <Compile Include="Assets\Scripts\TrenNav.cs" />
     <Compile Include="Assets\Scripts\Valor.cs" />
     <None Include="Assets\StreamingAssets\Vuforia\CuentoFaro.xml" />
+    <None Include="Assets\NavMeshComponents-master\ProjectSettings\ProjectVersion.txt" />
     <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Images.xml" />
     <None Include="Assets\StreamingAssets\Vuforia\Cuento.xml" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>F:/Unity/Proyectos/CuentoRemake/CuentoRemake/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>F:/Unity/Proyectos/Cuento/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>F:/Unity/Proyectos/CuentoRemake/CuentoRemake/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>F:/Unity/Proyectos/Cuento/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="VuforiaScripts">
-      <HintPath>F:/Unity/Proyectos/CuentoRemake/CuentoRemake/Library/ScriptAssemblies/VuforiaScripts.dll</HintPath>
+      <HintPath>F:/Unity/Proyectos/Cuento/Library/ScriptAssemblies/VuforiaScripts.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>F:/Unity/Proyectos/CuentoRemake/CuentoRemake/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>F:/Unity/Proyectos/Cuento/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>F:/Unity/Proyectos/CuentoRemake/CuentoRemake/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>F:/Unity/Proyectos/Cuento/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>F:/Unity/Proyectos/CuentoRemake/CuentoRemake/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>F:/Unity/Proyectos/Cuento/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="VuforiaEditorScripts">
-      <HintPath>F:/Unity/Proyectos/CuentoRemake/CuentoRemake/Library/ScriptAssemblies/VuforiaEditorScripts.dll</HintPath>
+      <HintPath>F:/Unity/Proyectos/Cuento/Library/ScriptAssemblies/VuforiaEditorScripts.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>F:/Unity/Proyectos/CuentoRemake/CuentoRemake/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>F:/Unity/Proyectos/Cuento/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>F:/Unity/Proyectos/CuentoRemake/CuentoRemake/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>F:/Unity/Proyectos/Cuento/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>F:/Unity/Proyectos/CuentoRemake/CuentoRemake/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>F:/Unity/Proyectos/Cuento/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>F:/Unity/Proyectos/CuentoRemake/CuentoRemake/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>F:/Unity/Proyectos/Cuento/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>F:/Unity/2019.2.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -277,7 +278,7 @@
       <HintPath>F:/Unity/2019.2.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="Vuforia.UnityExtensions">
-      <HintPath>F:/Unity/Proyectos/CuentoRemake/CuentoRemake/Library/PackageCache/com.ptc.vuforia.engine@8.3.9/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+      <HintPath>F:/Unity/Proyectos/Cuento/Library/PackageCache/com.ptc.vuforia.engine@8.3.9/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>F:/Unity/2019.2.5f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -624,6 +625,24 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>F:/Unity/2019.2.5f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="NavMeshComponentsExamplesEditor.csproj">
+      <Project>{5B6C0D77-A6CA-C219-F9C3-E601FD2F5692}</Project>
+      <Name>NavMeshComponentsExamplesEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{1F36AACC-C3A2-AE09-ED3C-23EB6164A320}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{64C55D99-6A21-9367-66CA-BD35336A48E9}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsExamples.csproj">
+      <Project>{AD9C59C3-BD1B-0844-A625-825698889AB3}</Project>
+      <Name>NavMeshComponentsExamples</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

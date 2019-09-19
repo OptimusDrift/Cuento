@@ -16,14 +16,14 @@ public class MostrarFaro : DefaultTrackableEventHandler
 
     protected override void OnTrackingFound()
     {
-        Debug.Log("asd");
+        Debug.Log("Encontrado");
         GetComponentInChildren<SubirFaro>().Reiniciar();
-        //base.OnTrackingFound();
+        base.OnTrackingFound();
     }
 
     protected override void OnTrackingLost()
     {
-        Debug.Log("WOWOWO");
+        Debug.Log("Perdido");
         base.OnTrackingLost();
     }
 }
